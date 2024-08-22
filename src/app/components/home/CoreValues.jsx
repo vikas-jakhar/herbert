@@ -19,7 +19,7 @@ const CoreValues = () => {
                                     <p className={`font-medium text-xl text-offBlack mt-4 ${i.id === 1 ? "text-right" : "text-left"}`}>{e.heading}</p>
                                     <PrimaryParagraph className={`mt-3 ${i.id === 1 ? "text-right" : "text-left"}`} children={e.text} />
                                 </div>
-                            ))}
+                            ))}    
                         </div>
                     ))}
                     <Image src='/assets/images/webp/work-tourism.png' className='w-full max-w-[259px] absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2' alt='work-tourism' width={100} height={100} />
