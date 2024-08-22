@@ -1,6 +1,5 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,18 +12,19 @@ const config: Config = {
       },
       container: {
         center: true,
-        padding: "20px",
+        padding: "24px",
         screens: {
           sm: "640px",
           md: "768px",
           lg: "1024px",
-          xl: "1180px",
+          xl: "1188px",
         },
       },
       fontFamily: {
         'rubik': "Rubik, sans-serif",
       },
       fontSize: {
+        'custom-xl': "28px",
         'custom-2xl': "56px",
       },
       lineHeight: {
@@ -48,4 +48,3 @@ const config: Config = {
   },
   plugins: [],
 };
-export default config;
