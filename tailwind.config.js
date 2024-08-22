@@ -37,6 +37,7 @@ module.exports = {
         offGray: "#5F5F5F",
         offWhite: "#FFF8F2",
         offBlack: "#010101",
+        lightGray: "#D6D6D6",
       },
       dropShadow: {
         'blue-sm': "1px 1px 0px blue",

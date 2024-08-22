@@ -24,7 +24,7 @@ const Faq = () => {
 
                                 return (
                                     <div key={computedIndex}
-                                        className={`${openIndex === computedIndex ? 'border-transparent' : 'border-gray'} w-full border-[0.5px] overflow-hidden rounded-2xl flex mx-auto max-w-[973px] mt-3 sm:mt-5 justify-center relative duration-300 ease-linear`}>
+                                        className={`${openIndex === computedIndex ? 'border-transparent' : 'border-gray'} w-full border border-lightGray overflow-hidden rounded-md flex mt-3 sm:mt-5 justify-center relative duration-300 ease-linear`}>
                                         <div className="accordion w-full">
                                             <div role="button"
                                                 className={`${openIndex === computedIndex ? 'bg-darkBlue' : 'bg-white'} duration-300 ease-linear accordion-header relative z-[1] flex items-center justify-between cursor-pointer py-[18px] px-6`}
@@ -34,8 +34,9 @@ const Faq = () => {
                                                 <div className="flex items-start sm:items-center gap-1.5">
                                                     <h3 className={`font-medium text-sm sm:text-base`}>{i.title}</h3>
                                                 </div>
-                                                <div className="w-[14px] h-[14px] relative">
-                                                    <span className='flex w-full h-0.5 bg-offGray'></span>
+                                                <div className="w-[14px] h-[14px] p-1.5 relative overflow-hidden">
+                                                    <span className='flex w-full h-[3px] bg-offGray absolute left-0 top-1/2 -translate-y-1/2'></span>
+                                                    <span className={`flex w-[3px] h-full bg-offGray absolute left-1/2 top-0 -translate-x-1/2 duration-300 ease-linear ${openIndex === computedIndex ? 'rotate-90 opacity-0' : ''}`}></span>
                                                 </div>
                                             </div>
                                             <div
