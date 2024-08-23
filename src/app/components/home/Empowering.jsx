@@ -7,6 +7,7 @@ import PrimaryHeading from '../custom-ui/PrimaryHeading';
 import PrimaryButton from '../custom-ui/PrimaryButton';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from 'next/image';
 gsap.registerPlugin(ScrollTrigger);
 
 const Empowering = () => {
@@ -18,10 +19,10 @@ const Empowering = () => {
                 duration: 1,
                 stagger: 0.3,
                 scrollTrigger: {
-                    trigger: ".Empowering", 
-                    start: "top 50%", 
-                    end: "bottom top", 
-                    toggleActions: "play none none reverse", 
+                    trigger: ".Empowering",
+                    start: "top 50%",
+                    end: "bottom top",
+                    toggleActions: "play none none reverse",
                 },
             });
             gsap.from(".text", {
@@ -67,6 +68,7 @@ const Empowering = () => {
                     </div>
                 </div>
             </div>
+            <Image src='/assets/images/webp/white-vector.png' alt='vector' width={39} height={271} className='right-0 absolute bottom-[41%] h-[250px] sm:h-[271px] sm:bottom-1/4 w-[20px] sm:w-[39px]' />
         </div>
     );
 };

@@ -1,3 +1,8 @@
+export const HEADER_DATA = [
+    { heading: "Herbert", url: "#hlo" },
+    { heading: "Sources", url: "#hlo" },
+    { heading: "Our Vision", url: "#hlo" },
+]
 export const CARD_DATA = [
     { icon: "pcIcon", title: "Identify", heading: "Relevant Information", text: "Herbert helps you pinpoint exactly what you need to know, saving you hours of searching through complex legal documents." },
     { icon: "clockIcon", title: "Understand", heading: "Complex Terminology", text: "We aim to demystify legal jargon, explaining concepts in clear, simple language" },

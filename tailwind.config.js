@@ -9,6 +9,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'lightOrange-gradient': "linear-gradient(241.09deg, rgba(255, 76, 36, 0.15) -34.32%, rgba(255, 227, 108, 0.15) 109.3%)",
+        'hero': "url(/assets/images/webp/hero-bg.webp)",
+        'hero-small': "url(/assets/images/webp/hero-img.png)",
       },
       container: {
         center: true,
@@ -47,6 +49,7 @@ module.exports = {
         'black-border': "0px 0px 0px 2px white, 2px 2px 0px 2px black",
         '3xl': "0px 0px 16px 6px #8080801F",
         '4xl': "0px 0px 1px 1px #5F5F5F",
+        '5xl': "0px 0px 0px 2px #010101",
       },
     },
   },

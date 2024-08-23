@@ -4,10 +4,11 @@ import PrimaryHeading from '../custom-ui/PrimaryHeading';
 import PrimaryParagraph from '../custom-ui/PrimaryParagraph';
 import { ACCORDION_DATA } from '@/app/utils/helper';
 import PrimaryButton from '../custom-ui/PrimaryButton';
+import Image from 'next/image';
 
 const Faq = () => {
     const [openIndex, setOpenIndex] = useState(null);
-    const contentRefs = useRef([]); 
+    const contentRefs = useRef([]);
 
     const handleToggle = (index) => {
         setOpenIndex(openIndex === index ? null : index);
@@ -21,7 +22,7 @@ const Faq = () => {
     };
 
     return (
-        <div className='pb-2 pt-20 lg:pb-36'>
+        <div className='pb-2 pt-20 lg:pb-36 relative'>
             <div className="container mt-10 relative z-[5]">
                 <PrimaryHeading className='text-center px-4' children="Frequently Asked " redText="Questions" />
                 <PrimaryParagraph className='text-center mt-[14px] md:mt-4 max-w-[622px] mx-auto' children="Help users find quick answers to common queries about Herbert, our AI-powered assistant for German visa and immigration processes." />
@@ -32,7 +33,7 @@ const Faq = () => {
                                 const computedIndex = `${outerIndex}-${index}`;
                                 return (
                                     <div key={computedIndex}
-                                        className={`${openIndex === computedIndex ? 'border-transparent shadow-3xl' : 'border-lightGray'} w-full border overflow-hidden rounded-md flex mt-3 lg:mt-6 justify-center relative duration-300 ease-linear`}>
+                                        className={`${openIndex === computedIndex ? 'border-transparent shadow-3xl' : 'border-lightGray'} w-full border bg-white overflow-hidden rounded-md flex mt-3 lg:mt-6 justify-center relative duration-300 ease-linear`}>
                                         <div className="accordion w-full">
                                             <div role="button"
                                                 className={`${openIndex === computedIndex ? 'pb-3 pt-[18px]' : 'py-[18px]'} duration-300 ease-linear accordion-header relative z-[1] flex items-center gap-2 justify-between cursor-pointer px-6`}
@@ -67,12 +68,13 @@ const Faq = () => {
                         <PrimaryHeading className='text-white text-center' children="Need Help in Your Visa? Ask Herbert Now!" />
                         <PrimaryParagraph className='text-white max-w-[528px] mx-auto text-center mt-3 md:mt-4' children="Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam." />
                         <div className="flex flex-col sm:flex-row justify-center items-center pt-8 md:pt-10 md:mt-0.5 gap-3 sm:gap-4">
-                            <PrimaryButton gsapClass="w-full" text="Start your conversation" className="bg-white text-offOrange w-full max-w-[300px]" />
-                            <PrimaryButton gsapClass="w-full" text="Learn More" className="bg-offOrange text-white border-white w-full max-w-[300px]" />
+                            <PrimaryButton gsapClass="w-full flex justify-center sm:w-fit" text="Start your conversation" className="bg-white text-offOrange w-full max-w-[300px]" />
+                            <PrimaryButton gsapClass="w-full flex justify-center sm:w-fit" text="Learn More" className="bg-offOrange text-white border-white w-full max-w-[300px]" />
                         </div>
                     </div>
                 </div>
             </div>
+            <Image src='/assets/images/webp/faq-bottom-img.png' className='left-1/2 -translate-x-1/2 absolute bottom-0 w-[1703px] lg:h-[686px] h-[485px] object-cover' alt='faq-bottom-img' width={1703} height={686} />
         </div>
     )
 }
