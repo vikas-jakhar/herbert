@@ -31,11 +31,11 @@ const Header = () => {
     }, [open]);
 
     return (
-        <div className="py-[23px]">
+        <div className="sm:py-[23px] py-[14px]">
             <div className="container">
                 <nav className="flex items-center justify-between">
                     <a href="" className="w-fit relative z-20">
-                        <Image src="/assets/images/webp/herbert-logo.png" className="sm:max-w-[180px] max-w-[117px] w-full" alt="herbert-logo" width={180} height={54} />
+                        <Image src="/assets/images/webp/herbert-logo.webp" className="sm:max-w-[180px] max-w-[117px] w-full" alt="herbert-logo" width={180} height={54} />
                     </a>
                     <div className={`${open ? "left-0 bg-white" : "-left-full"} flex items-center z-10 sm:bg-transparent absolute flex-col w-full h-screen pt-[108px] sm:pt-0 gap-12 top-0 sm:relative sm:bg-none sm:flex-row sm:gap-11 sm:h-fit sm:w-fit sm:left-auto duration-300 ease-linear`}>
                         {HEADER_DATA.map((i, index) => (

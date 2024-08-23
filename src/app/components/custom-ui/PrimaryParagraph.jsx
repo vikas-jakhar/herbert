@@ -7,7 +7,7 @@ const PrimaryParagraph = ({ children, reduceBelow, maxFontSize, minFontSize, cla
     return (
         <p {...props}
             style={{ fontSize: `clamp(${minText}px, ${sizeReducer}vw, ${maxText}px)`, }}
-            className={`${className} font-normal leading-6 text-offGray font-lato`}>
+            className={`${className} font-normal leading-5 sm:leading-6 text-offGray font-lato`}>
             {children}
         </p>
     )

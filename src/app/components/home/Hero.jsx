@@ -5,7 +5,7 @@ import PrimaryHeading from "../custom-ui/PrimaryHeading";
 import Image from 'next/image';
 import Header from '../common/Header';
 
-const Hero = () => { 
+const Hero = () => {
     return (
         <div className='relative pb-16 bg-hero-small sm:bg-hero bg-contain bg-no-repeat bg-top'>
             <Header />
@@ -20,14 +20,13 @@ const Hero = () => {
                         <PrimaryHeading className='text-left' children="Guiding " redText="Light in a Complex " blackText="Landscape" />
                         <PrimaryParagraph className='md:mt-4 mt-[14px] text-left' children="We see Herbert as more than just a chatbot – he's a friendly, knowledgeable guide in the often confusing world of German immigration law. Our vision is to bridge the gap between raw information and practical understanding, making the immigration process more approachable for all." />
                     </div>
-                    <div className="relative max-w-[261px] md:max-w-[392px] w-full max-h-[457px] mt-8 lg:mt-0">
-                        <Image src="/assets/images/webp/hello-img.png" alt='herbert-img' className='w-full max-w-[60px] md:max-w-[91.38px] ml-auto absolute top-0 left-0' width={91} height={66} />
-                        <Image src="/assets/images/webp/herbert-img.png" alt='herbert-img' className='w-full max-w-[359px] mx-auto lg:mr-0' width={259} height={457} />
+                    <div className="relative max-w-[261px] md:max-w-[392px] w-full max-h-[305px] sm:max-h-[457px] mt-8 lg:mt-0">
+                        <Image src="/assets/images/webp/hello-img.webp" alt='herbert-img' className='w-full max-w-[60px] md:max-w-[91.38px] ml-auto absolute top-0 left-0' width={91} height={66} />
+                        <Image src="/assets/images/webp/herbert-img.webp" alt='herbert-img' className='w-full max-w-[239px] sm:max-w-[359px] max-h-[305px] sm:max-h-[457px] mx-auto lg:mr-0' width={259} height={457} />
                     </div>
                 </div>
             </div>
-            {/* <Image src="/assets/images/webp/hero-bg.webp" className='absolute top-0 left-1/2 -translate-x-1/2' width={1440} height={810} /> */}
-            <Image src="/assets/images/webp/vector.png" alt='vector' className='absolute bottom-[22%] right-0 hidden md:flex' width={60} height={300} />
+            <Image src="/assets/images/webp/vector.webp" alt='vector' className='absolute bottom-[22%] right-0 hidden md:flex' width={60} height={300} />
         </div>
     )
 }

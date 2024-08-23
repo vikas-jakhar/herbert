@@ -8,7 +8,7 @@ const PrimaryHeading = ({ children, redText, blackText, reduceBelow, maxFontSize
         <h2
             {...props}
             style={{ fontSize: `clamp(${minText}px, ${sizeReducer}vw, ${maxText}px)`, }}
-            className={`${className} font-rubik font-semibold text-offBlack lg:leading-custom-xl`}>
+            className={`${className} font-rubik font-semibold text-offBlack leading-7 sm:leading-9 md:leading-10 lg:leading-custom-xl`}>
             {children} <span className="text-lightRed">{redText}</span> {blackText}
         </h2>
     )

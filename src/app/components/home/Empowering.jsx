@@ -52,23 +52,23 @@ const Empowering = () => {
                                 <div key={index} className="sm:w-1/2 w-full px-3 mt-6">
                                     <div className="bg-white w-full h-full p-3 xl:p-5 rounded-xl flex flex-col items-center card">
                                         <Icons IconName={items.icon} className="w-[72px] h-[72px] justify-center items-center bg-lightOrange-gradient rounded-full" />
-                                        <p className='font-medium text-xl text-offBlack text-center mt-4 flex flex-col'>
+                                        <p className='font-medium text-base sm:text-xl text-offBlack text-center gap-1.5 sm:gap-0 mt-4 flex sm:flex-col'>
                                             <span>{items.title}</span> {items.heading}
                                         </p>
-                                        <PrimaryParagraph className='text-center mt-3' children={items.text} />
+                                        <PrimaryParagraph className='text-center mt-1.5' children={items.text} />
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </div>
-                    <div className="max-w-[494px] w-full flex flex-col items-center lg:items-start">
-                        <PrimaryHeading className='text-center text lg:text-left' children="Empowering Through " redText="Information" />
-                        <PrimaryParagraph className='mt-3 text text-center lg:text-left' children="While Herbert cannot provide legal advice, we envision him as an empowering tool that helps users" />
+                    <div className="max-w-[494px] w-full flex flex-col items-start">
+                        <PrimaryHeading className='text-left text' children="Empowering Through " redText="Information" />
+                        <PrimaryParagraph className='mt-3 text text-left' children="While Herbert cannot provide legal advice, we envision him as an empowering tool that helps users" />
                         <PrimaryButton text="Learn More" gsapClass='text' className="bg-offOrange text-white mt-11" />
                     </div>
                 </div>
             </div>
-            <Image src='/assets/images/webp/white-vector.png' alt='vector' width={39} height={271} className='right-0 absolute bottom-[41%] h-[250px] sm:h-[271px] sm:bottom-1/4 w-[20px] sm:w-[39px]' />
+            <Image src='/assets/images/webp/white-vector.webp' alt='vector' width={39} height={271} className='right-0 absolute bottom-[41%] h-[250px] sm:h-[271px] sm:bottom-1/4 w-5 sm:w-[39px]' />
         </div>
     );
 };

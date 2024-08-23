@@ -23,7 +23,7 @@ const Faq = () => {
 
     return (
         <div className='pb-2 pt-20 lg:pb-36 relative'>
-            <div className="container mt-10 relative z-[5]">
+            <div className="container sm:mt-10 relative z-[5]">
                 <PrimaryHeading className='text-center px-4' children="Frequently Asked " redText="Questions" />
                 <PrimaryParagraph className='text-center mt-[14px] md:mt-4 max-w-[622px] mx-auto' children="Help users find quick answers to common queries about Herbert, our AI-powered assistant for German visa and immigration processes." />
                 <div className="md:pt-10 pt-2 flex flex-col lg:flex-row lg:gap-6 w-full">
@@ -74,7 +74,7 @@ const Faq = () => {
                     </div>
                 </div>
             </div>
-            <Image src='/assets/images/webp/faq-bottom-img.png' className='left-1/2 -translate-x-1/2 absolute bottom-0 w-[1703px] lg:h-[686px] h-[485px] object-cover' alt='faq-bottom-img' width={1703} height={686} />
+            <Image src='/assets/images/webp/faq-bottom-img.webp' className='left-1/2 -translate-x-1/2 absolute bottom-0 w-[1703px] lg:h-[686px] h-[485px] object-cover' alt='faq-bottom-img' width={1703} height={686} />
         </div>
     )
 }

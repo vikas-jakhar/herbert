@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-8 lg:flex-row lg:gap-20 xl:gap-0 justify-between mb-[3px]">
                     <div className="max-w-[412px] w-full">
                         <a href="" className='w-fit'>
-                            <Image src="/assets/images/webp/herbert-logo.png" className='sm:max-w-[326px] max-w-[210px] w-full' alt='herbert-logo' width={326} height={98} />
+                            <Image src="/assets/images/webp/herbert-logo.webp" className='sm:max-w-[326px] max-w-[210px] w-full' alt='herbert-logo' width={326} height={98} />
                         </a>
                         <PrimaryParagraph className='mt-[14px]' children="Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis tempor tristique. Purus sed phasellus metus lectus auctor." />
                     </div>
