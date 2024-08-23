@@ -1,5 +1,4 @@
-"use client"; // Add this line at the top
-
+"use client";
 import React, { useLayoutEffect } from 'react';
 import Icons from "../common/Icons";
 import PrimaryParagraph from '../custom-ui/PrimaryParagraph';
@@ -13,37 +12,48 @@ gsap.registerPlugin(ScrollTrigger);
 const Empowering = () => {
     useLayoutEffect(() => {
         const aot = gsap.context(() => {
-            let tl = gsap.timeline();
-            ScrollTrigger.create({
-                trigger: ".faq_animation",
-                start: "top 10%",
-                end: "bottom 40%",
-                animation: tl,
-                // markers: true,
-                pin: true,
-                scrub: 5,
+            gsap.from(".card", {
+                x: -400,
+                opacity: 0,
+                duration: 1,
+                stagger: 0.3,
+                scrollTrigger: {
+                    trigger: ".Empowering", 
+                    start: "top 50%", 
+                    end: "bottom top", 
+                    toggleActions: "play none none reverse", 
+                },
             });
-            tl.from(".heading_text", {
-                x: -1440,
-            })
-            tl.from(".accord_items", {
-                x: -1440,
-            })
+            gsap.from(".text", {
+                x: 400,
+                opacity: 0,
+                duration: 1,
+                stagger: 0.3,
+                scrollTrigger: {
+                    trigger: ".Empowering",
+                    start: "top 80%",
+                    end: "bottom top",
+                    toggleActions: "play none none reverse",
+                },
+            });
         });
+
         return () => aot.revert();
     }, []);
 
     return (
-        <div className='bg-offWhite relative py-16 sm:py-20'>
+        <div className='bg-offWhite relative py-16 sm:py-20 Empowering'>
             <div className="container sm:pb-10 lg:pt-4">
                 <div className="flex items-center flex-col lg:flex-row justify-between gap-5">
                     <div className="max-w-[558px] w-full">
                         <div className="flex flex-row -mx-3 flex-wrap">
                             {CARD_DATA.map((items, index) => (
                                 <div key={index} className="sm:w-1/2 w-full px-3 mt-6">
-                                    <div className="bg-white w-full h-full p-3 xl:p-5 rounded-xl flex flex-col items-center">
+                                    <div className="bg-white w-full h-full p-3 xl:p-5 rounded-xl flex flex-col items-center card">
                                         <Icons IconName={items.icon} className="w-[72px] h-[72px] justify-center items-center bg-lightOrange-gradient rounded-full" />
-                                        <p className='font-medium text-xl text-offBlack text-center mt-4 flex flex-col'> <span>{items.title}</span> {items.heading}</p>
+                                        <p className='font-medium text-xl text-offBlack text-center mt-4 flex flex-col'>
+                                            <span>{items.title}</span> {items.heading}
+                                        </p>
                                         <PrimaryParagraph className='text-center mt-3' children={items.text} />
                                     </div>
                                 </div>
@@ -51,9 +61,9 @@ const Empowering = () => {
                         </div>
                     </div>
                     <div className="max-w-[494px] w-full flex flex-col items-center lg:items-start">
-                        <PrimaryHeading className='text-center lg:text-left' children="Empowering Through " redText="Information" />
-                        <PrimaryParagraph className='mt-3 text-center lg:text-left' children="While Herbert cannot provide legal advice, we envision him as an empowering tool that helps users" />
-                        <PrimaryButton text="Learn More" className="bg-offOrange text-white mt-11" />
+                        <PrimaryHeading className='text-center text lg:text-left' children="Empowering Through " redText="Information" />
+                        <PrimaryParagraph className='mt-3 text text-center lg:text-left' children="While Herbert cannot provide legal advice, we envision him as an empowering tool that helps users" />
+                        <PrimaryButton text="Learn More" gsapClass='text' className="bg-offOrange text-white mt-11" />
                     </div>
                 </div>
             </div>
