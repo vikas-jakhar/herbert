@@ -1,22 +1,30 @@
 "use client"
-import React, { useState } from 'react'
-import PrimaryHeading from '../custom-ui/PrimaryHeading'
+import React, { useState, useRef } from 'react';
+import PrimaryHeading from '../custom-ui/PrimaryHeading';
 import PrimaryParagraph from '../custom-ui/PrimaryParagraph';
 import { ACCORDION_DATA } from '@/app/utils/helper';
 import PrimaryButton from '../custom-ui/PrimaryButton';
 
 const Faq = () => {
     const [openIndex, setOpenIndex] = useState(null);
+    const contentRefs = useRef([]); 
 
     const handleToggle = (index) => {
         setOpenIndex(openIndex === index ? null : index);
+    };
+
+    const getHeight = (index) => {
+        if (contentRefs.current[index]) {
+            return contentRefs.current[index].scrollHeight + 'px';
+        }
+        return '0px';
     };
 
     return (
         <div className='pb-2 pt-20 lg:pb-36'>
             <div className="container mt-10 relative z-[5]">
                 <PrimaryHeading className='text-center px-4' children="Frequently Asked " redText="Questions" />
-                <PrimaryParagraph className='text-center mt-[14px] md:mt-4 max-w-[622px] mx-auto' children="Help users find quick answers to common queries about Herbert, our AI-powered assistant for German visa and immigration processes. " />
+                <PrimaryParagraph className='text-center mt-[14px] md:mt-4 max-w-[622px] mx-auto' children="Help users find quick answers to common queries about Herbert, our AI-powered assistant for German visa and immigration processes." />
                 <div className="md:pt-10 pt-2 flex flex-col lg:flex-row lg:gap-6 w-full">
                     {ACCORDION_DATA.map((item, outerIndex) => (
                         <div key={item.id} className='lg:max-w-[558px] w-full'>
@@ -38,7 +46,10 @@ const Faq = () => {
                                                     <span className={`flex w-[3px] h-full bg-offGray absolute left-1/2 top-0 -translate-x-1/2 duration-300 ease-linear ${openIndex === computedIndex ? 'rotate-90 opacity-0' : ''}`}></span>
                                                 </div>
                                             </div>
-                                            <div className={`accordion-content max-h-0 overflow-hidden duration-300 ease-linear ${openIndex === computedIndex ? 'max-h-96' : 'max-h-0'}`}>
+                                            <div
+                                                ref={el => contentRefs.current[computedIndex] = el}
+                                                className={`accordion-content overflow-hidden duration-300 ease-linear`}
+                                                style={{ maxHeight: openIndex === computedIndex ? getHeight(computedIndex) : '0px' }}>
                                                 <div className="flex items-start px-6 pb-[18px] w-full">
                                                     <PrimaryParagraph children={i.content} />
                                                 </div>
@@ -51,7 +62,7 @@ const Faq = () => {
                     ))}
                 </div>
                 <PrimaryButton text="View All" className="bg-offOrange text-white mt-8 md:mt-12 mx-auto" />
-                <div className="rounded-2xl bg-offOrange md:py-16 p-5">
+                <div className="rounded-2xl bg-offOrange md:py-16 p-5 relative -bottom-16 -mb-36 lg:-bottom-[120px] lg:-mb-[160px] sm:-mb-24">
                     <div className="max-w-[694px] w-full mx-auto">
                         <PrimaryHeading className='text-white text-center' children="Need Help in Your Visa? Ask Herbert Now!" />
                         <PrimaryParagraph className='text-white max-w-[528px] mx-auto text-center mt-3 md:mt-4' children="Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam." />

@@ -1,5 +1,4 @@
 const PrimaryHeading = ({ children, redText, blackText, reduceBelow, maxFontSize, minFontSize, className = '', ...props }) => {
-
     const minText = minFontSize ? minFontSize : 24
     const maxText = maxFontSize ? maxFontSize : 48
     const reduceBefore = reduceBelow ? reduceBelow : 1024

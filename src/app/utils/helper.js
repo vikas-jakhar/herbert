@@ -59,15 +59,22 @@ export const ACCORDION_DATA = [
 export const FOOTER_DATA = [
     {
         heading: "Quick Links", items: [
-            { subHeading:"Services", link:""},
-            { subHeading:"About Us", link:""},
-            { subHeading:"Features", link:""},
-            { subHeading:"Plans", link:""},
-    ]},
+            { subHeading: "Services", link: "" },
+            { subHeading: "About Us", link: "" },
+            { subHeading: "Features", link: "" },
+            { subHeading: "Plans", link: "" },
+        ]
+    },
     {
         heading: "Quick Links", items: [
-            { subHeading:"Help Center", link:""},
-            { subHeading:"Term & Conditions", link:""},
-            { subHeading:"Privacy Policy", link:""},
-    ]},
+            { subHeading: "Help Center", link: "" },
+            { subHeading: "Term & Conditions", link: "" },
+            { subHeading: "Privacy Policy", link: "" },
+        ]
+    },
+]
+export const SOCIAL_ICONS = [
+    { icon: "facebookIcon", link: "" },
+    { icon: "instagramIcon", link: "" },
+    { icon: "linkedinIcon", link: "" },
 ]
