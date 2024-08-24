@@ -50,6 +50,7 @@ module.exports = {
         '3xl': "0px 0px 16px 6px #8080801F",
         '4xl': "0px 0px 1px 1px #5F5F5F",
         '5xl': "0px 0px 0px 2px #010101",
+        '6xl': "0px 0px 0px 1px white, 2px 2px 0px 1px black, -0.5px -0.5px 1px 1px #5F5F5F",
       },
     },
   },

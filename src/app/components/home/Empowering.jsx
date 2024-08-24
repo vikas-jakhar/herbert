@@ -1,47 +1,13 @@
 "use client";
-import React, { useLayoutEffect } from 'react';
+import React from 'react';
 import Icons from "../common/Icons";
 import PrimaryParagraph from '../custom-ui/PrimaryParagraph';
 import { CARD_DATA } from "@/app/utils/helper";
 import PrimaryHeading from '../custom-ui/PrimaryHeading';
 import PrimaryButton from '../custom-ui/PrimaryButton';
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from 'next/image';
-gsap.registerPlugin(ScrollTrigger);
 
 const Empowering = () => {
-    useLayoutEffect(() => {
-        const aot = gsap.context(() => {
-            gsap.from(".card", {
-                x: -400,
-                opacity: 0,
-                duration: 1,
-                stagger: 0.3,
-                scrollTrigger: {
-                    trigger: ".Empowering",
-                    start: "top 50%",
-                    end: "bottom top",
-                    toggleActions: "play none none reverse",
-                },
-            });
-            gsap.from(".text", {
-                x: 400,
-                opacity: 0,
-                duration: 1,
-                stagger: 0.3,
-                scrollTrigger: {
-                    trigger: ".Empowering",
-                    start: "top 80%",
-                    end: "bottom top",
-                    toggleActions: "play none none reverse",
-                },
-            });
-        });
-
-        return () => aot.revert();
-    }, []);
-
     return (
         <div className='bg-offWhite relative py-16 sm:py-20 Empowering'>
             <div className="container sm:pb-10 lg:pt-4">

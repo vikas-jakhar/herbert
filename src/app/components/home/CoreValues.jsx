@@ -1,55 +1,11 @@
 "use client";
-import React, { useLayoutEffect } from 'react';
+import React from 'react';
 import PrimaryHeading from '../custom-ui/PrimaryHeading'
 import PrimaryParagraph from '../custom-ui/PrimaryParagraph'
 import Image from 'next/image'
 import { WORK_TOURISM } from '@/app/utils/helper'
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
 const CoreValues = () => {
-    useLayoutEffect(() => {
-        const aot = gsap.context(() => {
-            gsap.from(".heading", {
-                x: -400,
-                opacity: 0,
-                duration: 1,
-                stagger: 0.3,
-                scrollTrigger: {
-                    trigger: ".CoreValues",
-                    start: "top 50%",
-                    end: "bottom top",
-                    toggleActions: "play none none reverse",
-                },
-            });
-            gsap.from(".para", {
-                x: 400,
-                opacity: 0,
-                duration: 1,
-                stagger: 0.3,
-                scrollTrigger: {
-                    trigger: ".CoreValues",
-                    start: "top 80%",
-                    end: "bottom top",
-                    toggleActions: "play none none reverse",
-                },
-            });
-            gsap.from(".img", {
-                zoom: "0",
-                opacity: 0,
-                duration: 3,
-                scrollTrigger: {
-                    trigger: ".CoreValues",
-                    start: "top 80%",
-                    end: "bottom top",
-                    toggleActions: "play none none reverse",
-                },
-            });
-        });
-
-        return () => aot.revert();
-    }, []);
     return (
         <div className='relative py-20 CoreValues'>
             <div className="container sm:py-10 relative z-[2]">

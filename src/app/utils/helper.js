@@ -1,7 +1,7 @@
 export const HEADER_DATA = [
-    { heading: "Herbert", url: "#hlo" },
-    { heading: "Sources", url: "#hlo" },
-    { heading: "Our Vision", url: "#hlo" },
+    { heading: "Herbert", url: "#" },
+    { heading: "Sources", url: "#" },
+    { heading: "Our Vision", url: "#" },
 ]
 export const CARD_DATA = [
     { icon: "pcIcon", title: "Identify", heading: "Relevant Information", text: "Herbert helps you pinpoint exactly what you need to know, saving you hours of searching through complex legal documents." },
@@ -79,7 +79,7 @@ export const FOOTER_DATA = [
     },
 ]
 export const SOCIAL_ICONS = [
-    { icon: "facebookIcon", link: "" },
-    { icon: "instagramIcon", link: "" },
-    { icon: "linkedinIcon", link: "" },
+    { icon: "facebookIcon", link: "https://www.facebook.com/" },
+    { icon: "instagramIcon", link: "https://www.instagram.com/accounts/login/?hl=en" },
+    { icon: "linkedinIcon", link: "https://in.linkedin.com/" },
 ]
