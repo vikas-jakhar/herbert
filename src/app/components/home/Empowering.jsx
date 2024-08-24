@@ -34,7 +34,7 @@ const Empowering = () => {
                     </div>
                 </div>
             </div>
-            <Image src='/assets/images/webp/white-vector.webp' alt='vector' width={39} height={271} className='right-0 absolute bottom-[41%] h-[250px] sm:h-[271px] sm:bottom-1/4 w-5 sm:w-[39px]' />
+            <Image src='/assets/images/webp/white-vector.webp' style={{ width: 'auto', height: 'auto' }} alt='vector' width={39} height={271} className='right-0 absolute bottom-[41%] h-[250px] sm:h-[271px] sm:bottom-1/4 w-5 sm:w-[39px]' />
         </div>
     );
 };

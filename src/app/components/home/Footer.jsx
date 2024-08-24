@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-8 lg:flex-row lg:gap-20 xl:gap-0 justify-between mb-[3px]">
                     <div className="max-w-[412px] w-full">
                         <a href="" className='w-fit'>
-                            <Image src="/assets/images/webp/herbert-logo.webp" className='sm:max-w-[326px] max-w-[210px] bottom w-full' alt='herbert-logo' width={326} height={98} />
+                            <Image src="/assets/images/webp/herbert-logo.webp" style={{ width: 'auto', height: 'auto' }} className='sm:max-w-[326px] max-w-[210px] bottom w-full' alt='herbert-logo' width={326} height={98} />
                         </a>
                         <PrimaryParagraph className='mt-[14px] bottom' data="Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis tempor tristique. Purus sed phasellus metus lectus auctor." />
                     </div>
@@ -34,7 +34,7 @@ const Footer = () => {
                             <div className="flex items-center gap-3 mt-4">
                                 {SOCIAL_ICONS.map((e, idx) => (
                                     <div key={idx} className="bottom w-fit">
-                                        <a href={e.link} target='_blank' rel="noreferrer" className='rounded-full w-9 h-9 grid place-items-center bg-lightOrange-gradient duration-300 relative ease-linear group overflow-hidden hover:shadow-4xl'>
+                                        <a href={e.link} aria-label="social icon" aria-hidden="true" target='_blank' rel="noreferrer" className='rounded-full w-9 h-9 grid place-items-center bg-lightOrange-gradient duration-300 relative ease-linear group overflow-hidden hover:shadow-4xl'>
                                             <Icons IconName={e.icon} className="z-[2] relative" fill="group-hover:fill-white group-hover:drop-shadow-blue-sm" />
                                             <span className='flex h-0 w-0 bg-offOrange duration-300 ease-linear top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute group-hover:rotate-180 group-hover:w-16 group-hover:h-16'></span>
                                         </a>

@@ -64,7 +64,7 @@ const Faq = () => {
                     </div>
                 </div>
             </div>
-            <Image src='/assets/images/webp/faq-bottom-img.webp' className='left-1/2 -translate-x-1/2 absolute bottom-0 w-[1703px] lg:h-[686px] h-[485px] object-cover' alt='faq-bottom-img' width={1703} height={686} />
+            <Image src='/assets/images/webp/faq-bottom-img.webp' style={{ width: 'auto', height: 'auto' }} className='left-1/2 -translate-x-1/2 absolute bottom-0 w-[1703px] lg:h-[686px] h-[485px] object-cover' alt='faq-bottom-img' width={1703} height={686} />
         </div>
     )
 }
