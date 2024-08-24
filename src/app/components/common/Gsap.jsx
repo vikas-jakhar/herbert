@@ -75,7 +75,7 @@ const Gsap = () => {
                 stagger: 0.3,
                 scrollTrigger: {
                     trigger: ".Empowering",
-                    start: "top top",
+                    start: "top 50%",
                     end: "bottom top",
                     toggleActions: "play none none none",
                     once: true,
@@ -88,7 +88,7 @@ const Gsap = () => {
                 stagger: 0.3,
                 scrollTrigger: {
                     trigger: ".Empowering",
-                    start: "top top",
+                    start: "top 80%",
                     end: "bottom top",
                     toggleActions: "play none none none",
                     once: true,

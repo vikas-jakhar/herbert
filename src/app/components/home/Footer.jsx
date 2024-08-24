@@ -2,6 +2,7 @@ import Image from 'next/image'
 import PrimaryParagraph from '../custom-ui/PrimaryParagraph'
 import { FOOTER_DATA, SOCIAL_ICONS } from '@/app/utils/helper';
 import Icons from '../common/Icons';
+import Link from 'next/link';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -10,9 +11,16 @@ const Footer = () => {
             <div className="container pb-10 sm:pb-12 relative z-[5] pt-24 sm:pt-10 lg:pt-20 mt-[132px]">
                 <div className="flex flex-col gap-8 lg:flex-row lg:gap-20 xl:gap-0 justify-between mb-[3px]">
                     <div className="max-w-[412px] w-full">
-                        <a href="" className='w-fit'>
-                            <Image src="/assets/images/webp/herbert-logo.webp" style={{ width: 'auto', height: 'auto' }} className='sm:max-w-[326px] max-w-[210px] bottom w-full' alt='herbert-logo' width={326} height={98} />
-                        </a>
+                        <Link href="" className='w-fit'>
+                            <Image
+                                src="/assets/images/webp/herbert-logo.webp"
+                                alt="herbert-logo"
+                                width={326} // Width of the image
+                                height={98} // Height of the image to maintain aspect ratio
+                                sizes="(max-width: 640px) 80vw, (min-width: 641px) and (max-width: 1024px) 60vw, 326px" // Adjust sizes for different screen widths
+                                className="sm:max-w-[326px] max-w-[210px] bottom w-full" // Responsive CSS classes
+                            />
+                        </Link>
                         <PrimaryParagraph className='mt-[14px] bottom' data="Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis tempor tristique. Purus sed phasellus metus lectus auctor." />
                     </div>
                     <div className="sm:max-w-[518px] max-w-[291px] w-full flex flex-col sm:flex-row justify-between">
@@ -22,7 +30,7 @@ const Footer = () => {
                                     <p className='font-medium font-lato bottom text-sm sm:text-base text-offBlack opacity-90'>{i.heading}</p>
                                     <div className="flex flex-col pt-2">
                                         {i.items.map((e, idx) => (
-                                            <div key={idx} className="bottom mt-2 w-fit"><a href={e.link} className='w-fit capitalize font-normal text-base text-offGray duration-300 ease-linear hover:text-offOrange'>{e.subHeading}</a></div>
+                                            <div key={idx} className="bottom mt-2 w-fit"><Link href={e.link} className='w-fit capitalize font-normal text-base text-offGray duration-300 ease-linear hover:text-offOrange'>{e.subHeading}</Link></div>
                                         ))}
                                     </div>
                                 </div>
@@ -33,10 +41,10 @@ const Footer = () => {
                             <div className="flex items-center gap-3 mt-4">
                                 {SOCIAL_ICONS.map((e, idx) => (
                                     <div key={idx} className="bottom w-fit">
-                                        <a href={e.link} aria-label="social icon" aria-hidden="true" target='_blank' rel="noreferrer" className='rounded-full w-9 h-9 grid place-items-center bg-lightOrange-gradient duration-300 relative ease-linear group overflow-hidden hover:shadow-4xl'>
+                                        <Link href={e.link} aria-label="social icon" aria-hidden="true" target='_blank' rel="noreferrer" className='rounded-full w-9 h-9 grid place-items-center bg-lightOrange-gradient duration-300 relative ease-linear group overflow-hidden hover:shadow-4xl'>
                                             <Icons IconName={e.icon} className="z-[2] relative" fill="group-hover:fill-white group-hover:drop-shadow-blue-sm" />
                                             <span className='flex h-0 w-0 bg-offOrange duration-300 ease-linear top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute group-hover:rotate-180 group-hover:w-16 group-hover:h-16'></span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 ))}
                             </div>

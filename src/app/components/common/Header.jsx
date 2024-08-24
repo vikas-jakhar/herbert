@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { HEADER_DATA } from '@/app/utils/helper';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Header = () => {
     const [open, setOpen] = useState(false);
@@ -24,14 +25,14 @@ const Header = () => {
         <div className="sm:pb-[23px] pb-[14px]">
             <div className="container">
                 <nav className="flex items-center justify-between">
-                    <a href="/" className="w-fit relative z-20">
-                        <Image src="/assets/images/webp/herbert-logo.webp" style={{ width: 'auto', height: 'auto' }} className="sm:max-w-[180px] navBar max-w-[117px] w-full" alt="herbert-logo" width={180} height={54} />
-                    </a>
+                    <Link href="/" className="w-fit relative z-20">
+                        <Image src="/assets/images/webp/herbert-logo.webp" alt="herbert-logo" className="sm:max-w-[180px] navBar max-w-[117px] w-full" width={180} height={54} sizes="(max-width: 640px) 50vw, (min-width: 641px) 33vw, 117px" />
+                    </Link>
                     <div className={`${open ? "left-0 bg-white" : "-left-full"} flex items-center z-10 sm:bg-transparent absolute flex-col w-full h-screen pt-[108px] sm:pt-0 gap-12 top-0 sm:relative sm:bg-none sm:flex-row sm:gap-11 sm:h-fit sm:w-fit sm:left-auto duration-300 ease-linear`}>
                         {HEADER_DATA.map((i, index) => (
-                            <a key={index} href={i.url} aria-label={i.heading} onClick={ToggleOpen} className="font-normal navBar text-base duration-300 ease-linear hover:text-offBlack text-offGray w-fit relative after:absolute after:duration-300 after:ease-linear after:-bottom-[3px] after:left-1/2 after:-translate-x-1/2 after:bg-offBlack after:w-0 after:h-[3px] after:rounded-xl hover:after:w-[31px]">
+                            <Link key={index} href={i.url} aria-label={i.heading} onClick={ToggleOpen} className="font-normal navBar text-base duration-300 ease-linear hover:text-offBlack text-offGray w-fit relative after:absolute after:duration-300 after:ease-linear after:-bottom-[3px] after:left-1/2 after:-translate-x-1/2 after:bg-offBlack after:w-0 after:h-[3px] after:rounded-xl hover:after:w-[31px]">
                                 {i.heading}
-                            </a>
+                            </Link>
                         ))}
                         <span className='flex max-w-[327px] bg-lightGray h-px w-full absolute top-[153px] sm:hidden left-1/2 -translate-x-1/2'></span>
                         <span className='flex max-w-[327px] bg-lightGray h-px w-full absolute top-[223px] sm:hidden left-1/2 -translate-x-1/2'></span>
