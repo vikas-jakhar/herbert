@@ -1,4 +1,3 @@
-"use client"
 import Image from 'next/image'
 import PrimaryParagraph from '../custom-ui/PrimaryParagraph'
 import { FOOTER_DATA, SOCIAL_ICONS } from '@/app/utils/helper';

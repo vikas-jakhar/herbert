@@ -10,7 +10,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
-
     return (
         <div className='relative pt-[14px] sm:pt-[23px] pb-16 bg-hero-small sm:bg-hero bg-contain bg-no-repeat bg-top' id='hero'>
             <Header />

@@ -24,7 +24,6 @@ module.exports = {
       },
       fontFamily: {
         'rubik': "Rubik, sans-serif",
-        'lato': "Lato, sans-serif",
       },
       fontSize: {
         'custom-xl': "28px",

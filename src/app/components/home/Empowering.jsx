@@ -1,4 +1,3 @@
-"use client";
 import React from 'react';
 import Icons from "../common/Icons";
 import PrimaryParagraph from '../custom-ui/PrimaryParagraph';

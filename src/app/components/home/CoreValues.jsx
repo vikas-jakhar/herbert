@@ -1,4 +1,3 @@
-"use client";
 import React from 'react';
 import PrimaryHeading from '../custom-ui/PrimaryHeading'
 import PrimaryParagraph from '../custom-ui/PrimaryParagraph'
