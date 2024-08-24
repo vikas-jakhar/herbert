@@ -12,11 +12,7 @@ const Header = () => {
     };
     useEffect(() => {
         const handleOverflow = () => {
-            if (open && window.innerWidth < 640) {
-                document.body.style.overflow = "hidden";
-            } else {
-                document.body.style.overflow = "";
-            }
+            document.body.style.overflow = open && window.innerWidth < 640 ? "hidden" : "";
         };
         handleOverflow();
         window.addEventListener("resize", handleOverflow);

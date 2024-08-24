@@ -20,7 +20,7 @@ const Footer = () => {
                         <div className="flex flex-row justify-between max-w-[300px] w-full">
                             {FOOTER_DATA.map((i, index) => (
                                 <div key={index} className="w-fit">
-                                    <p className='font-medium bottom text-sm sm:text-base text-offBlack opacity-90'>{i.heading}</p>
+                                    <p className='font-medium font-lato bottom text-sm sm:text-base text-offBlack opacity-90'>{i.heading}</p>
                                     <div className="flex flex-col pt-2">
                                         {i.items.map((e, idx) => (
                                             <div key={idx} className="bottom mt-2 w-fit"><a href={e.link} className='w-fit capitalize font-normal text-base text-offGray duration-300 ease-linear hover:text-offOrange'>{e.subHeading}</a></div>

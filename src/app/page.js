@@ -10,7 +10,7 @@ import Gsap from "./components/common/Gsap";
 
 export default function Home() {
   return (
-    <div className="overflow-hidden py-1">
+    <div className="overflow-hidden">
       <Gsap />
       <Hero />
       <Empowering />
