@@ -14,7 +14,7 @@ const Footer = () => {
                         <a href="" className='w-fit'>
                             <Image src="/assets/images/webp/herbert-logo.webp" className='sm:max-w-[326px] max-w-[210px] bottom w-full' alt='herbert-logo' width={326} height={98} />
                         </a>
-                        <PrimaryParagraph className='mt-[14px] bottom' children="Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis tempor tristique. Purus sed phasellus metus lectus auctor." />
+                        <PrimaryParagraph className='mt-[14px] bottom' data="Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis tempor tristique. Purus sed phasellus metus lectus auctor." />
                     </div>
                     <div className="sm:max-w-[518px] max-w-[291px] w-full flex flex-col sm:flex-row justify-between">
                         <div className="flex flex-row justify-between max-w-[300px] w-full">

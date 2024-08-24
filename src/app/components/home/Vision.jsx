@@ -12,8 +12,8 @@ const Vision = () => {
                 <Image src='/assets/images/webp/our-vision.webp' className='left-0 image max-w-[500px] xl:max-w-[701px] w-full lg:absolute lg:top-1/2 lg:-translate-y-1/2' alt='our-vision' width={701} height={602} />
                 <div className="container flex justify-center lg:justify-end relative z-[1] lg:my-24 mt-14">
                     <div className="max-w-[473px] w-full">
-                        <PrimaryHeading children="Our " redText="Vision" className='Paragraph' />
-                        <PrimaryParagraph className='md:mt-4 mt-[14px] Paragraph' children="We're committed to continually refining and expanding Herbert's capabilities to serve this vision. Through Herbert, we aspire to make the dream of living, working, or studying in Germany feel within reach for people around the world. By providing clear guidance and reliable information, we hope to play a part in many successful immigration stories." />
+                        <PrimaryHeading data="Our " redText="Vision" className='Paragraph' />
+                        <PrimaryParagraph className='md:mt-4 mt-[14px] Paragraph' data="We're committed to continually refining and expanding Herbert's capabilities to serve this vision. Through Herbert, we aspire to make the dream of living, working, or studying in Germany feel within reach for people around the world. By providing clear guidance and reliable information, we hope to play a part in many successful immigration stories." />
                         <PrimaryButton text="Learn More" gsapClass="Paragraph" className="bg-offOrange text-white mt-8 md:mt-[58px]" />
                     </div>
                 </div>

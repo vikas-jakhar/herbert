@@ -21,15 +21,15 @@ const Empowering = () => {
                                         <p className='font-medium text-base sm:text-xl text-offBlack text-center gap-1.5 sm:gap-0 mt-4 flex sm:flex-col'>
                                             <span>{items.title}</span> {items.heading}
                                         </p>
-                                        <PrimaryParagraph className='text-center mt-1.5' children={items.text} />
+                                        <PrimaryParagraph className='text-center mt-1.5' data={items.text} />
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </div>
                     <div className="max-w-[494px] w-full flex flex-col items-start">
-                        <PrimaryHeading className='text-left text' children="Empowering Through " redText="Information" />
-                        <PrimaryParagraph className='mt-3 text text-left' children="While Herbert cannot provide legal advice, we envision him as an empowering tool that helps users" />
+                        <PrimaryHeading className='text-left text' data="Empowering Through " redText="Information" />
+                        <PrimaryParagraph className='mt-3 text text-left' data="While Herbert cannot provide legal advice, we envision him as an empowering tool that helps users" />
                         <PrimaryButton text="Learn More" gsapClass='text' className="bg-offOrange text-white mt-11" />
                     </div>
                 </div>
