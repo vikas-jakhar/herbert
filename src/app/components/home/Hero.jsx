@@ -30,14 +30,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <Image
-                src="/assets/images/webp/vector.webp"
-                alt="vector"
-                width={60} // Actual width of the image
-                style={{ width: 'auto', height: '300px' }}
-                height={0} // Actual height of the image
-                sizes="(max-width: 640px) 50vw, (min-width: 641px) and (max-width: 1024px) 30vw, 60px" // Adjust sizes for different screen widths
-                className="absolute bottom-[22%] right-0 hidden md:flex" // Use CSS classes for positioning and visibility
+            <Image src="/assets/images/webp/vector.webp" alt="vector" width={60} style={{ width: 'auto', height: '300px' }} height={0} sizes="(max-width: 640px) 50vw, (min-width: 641px) and (max-width: 1024px) 30vw, 60px" className="absolute bottom-[22%] right-0 hidden md:flex" 
             />
         </div>
     )

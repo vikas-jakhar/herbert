@@ -33,14 +33,7 @@ const Empowering = () => {
                     </div>
                 </div>
             </div>
-            <Image
-                src="/assets/images/webp/white-vector.webp"
-                alt="vector"
-                width={39} // Width of the image
-                height={271} // Height of the image to maintain aspect ratio
-                sizes="(max-width: 640px) 20vw, (min-width: 641px) and (max-width: 1024px) 10vw, 39px" // Adjust sizes for different screen widths
-                className="right-0 absolute bottom-[41%] h-[250px] sm:h-[271px] sm:bottom-1/4 w-5 sm:w-[39px]" // Responsive CSS classes
-            />
+            <Image src="/assets/images/webp/white-vector.webp" alt="vector" width={39} height={271} sizes="(max-width: 640px) 20vw, (min-width: 641px) and (max-width: 1024px) 10vw, 39px" className="right-0 absolute bottom-[41%] h-[250px] sm:h-[271px] sm:bottom-1/4 w-5 sm:w-[39px]" />
         </div>
     );
 };

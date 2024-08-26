@@ -64,14 +64,7 @@ const Faq = () => {
                     </div>
                 </div>
             </div>
-            <Image
-                src="/assets/images/webp/faq-bottom-img.webp"
-                alt="faq-bottom-img"
-                width={1703} // Width of the image
-                height={686} // Height of the image
-                sizes="(max-width: 640px) 90vw, (min-width: 641px) and (max-width: 1024px) 80vw, 1703px" // Adjust sizes for different screen widths
-                className="left-1/2 -translate-x-1/2 absolute bottom-0 w-full lg:h-[686px] h-[485px] object-cover" // Responsive CSS classes
-            />
+            <Image src="/assets/images/webp/faq-bottom-img.webp" alt="faq-bottom-img" width={1703} height={686} sizes="(max-width: 640px) 90vw, (min-width: 641px) and (max-width: 1024px) 80vw, 1703px" className="left-1/2 -translate-x-1/2 absolute bottom-0 w-full lg:h-[686px] h-[485px] object-cover" />
         </div>
     )
 }
