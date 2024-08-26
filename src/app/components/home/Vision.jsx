@@ -11,9 +11,9 @@ const Vision = () => {
             <div className="max-w-[1440px] mx-auto h-full w-full relative flex flex-col items-center" id='vision'>
                 <Image src="/assets/images/webp/our-vision.webp" alt="our-vision" width={701} height={602} sizes="(max-width: 640px) 90vw, (min-width: 641px) and (max-width: 1024px) 80vw, 701px" className="left-0 image max-w-[500px] xl:max-w-[701px] w-full lg:absolute lg:top-1/2 lg:-translate-y-1/2" />
                 <div className="container flex justify-center lg:justify-end relative z-[1] lg:my-24 mt-14">
-                    <div className="max-w-[473px] w-full">
+                    <div className="xl:max-w-[473px] md:max-w-[453px] w-full flex items-start sm:items-center lg:items-start flex-col">
                         <PrimaryHeading data="Our " redText="Vision" className='Paragraph' />
-                        <PrimaryParagraph className='md:mt-4 mt-[14px] Paragraph' data="We're committed to continually refining and expanding Herbert's capabilities to serve this vision. Through Herbert, we aspire to make the dream of living, working, or studying in Germany feel within reach for people around the world. By providing clear guidance and reliable information, we hope to play a part in many successful immigration stories." />
+                        <PrimaryParagraph className='md:mt-4 mt-[14px] Paragraph text-left sm:text-center lg:text-left' data="We're committed to continually refining and expanding Herbert's capabilities to serve this vision. Through Herbert, we aspire to make the dream of living, working, or studying in Germany feel within reach for people around the world. By providing clear guidance and reliable information, we hope to play a part in many successful immigration stories." />
                         <PrimaryButton text="Learn More" gsapClass="Paragraph" className="bg-offOrange text-white mt-8 md:mt-[58px]" />
                     </div>
                 </div>

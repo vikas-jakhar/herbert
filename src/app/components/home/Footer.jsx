@@ -16,14 +16,14 @@ const Footer = () => {
                         </Link>
                         <PrimaryParagraph className='mt-[14px] bottom' data="Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis tempor tristique. Purus sed phasellus metus lectus auctor." />
                     </div>
-                    <div className="sm:max-w-[518px] max-w-[291px] w-full flex flex-col sm:flex-row justify-between">
-                        <div className="flex flex-row justify-between max-w-[300px] w-full">
+                    <div className="lg:max-w-[518px] w-full flex flex-col sm:flex-row justify-between">
+                        <div className="flex flex-row justify-between sm:max-w-[350px] md:max-w-[400px] lg:max-w-[300px] w-full">
                             {FOOTER_DATA.map((i, index) => (
                                 <div key={index} className="w-fit">
-                                    <p className='font-medium font-lato bottom text-sm sm:text-base text-offBlack opacity-90'>{i.heading}</p>
+                                    <p className='font-medium font-lato bottom text-sm sm:text-base text-offBlack sm:opacity-90'>{i.heading}</p>
                                     <div className="flex flex-col pt-2">
                                         {i.items.map((e, idx) => (
-                                            <div key={idx} className="bottom mt-2 w-fit"><Link href={e.link} className='w-fit capitalize font-normal text-base text-offGray duration-300 ease-linear hover:text-offOrange'>{e.subHeading}</Link></div>
+                                            <div key={idx} className="bottom mt-2 w-fit"><Link href="/" className='w-fit capitalize font-normal text-base text-offGray duration-300 ease-linear hover:text-offOrange'>{e.subHeading}</Link></div>
                                         ))}
                                     </div>
                                 </div>

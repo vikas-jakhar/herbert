@@ -10,7 +10,7 @@ const Empowering = () => {
     return (
         <div className='bg-offWhite relative py-16 sm:py-20 Empowering overflow-hidden'>
             <div className="container sm:pb-10 lg:pt-4">
-                <div className="flex items-center flex-col lg:flex-row justify-between gap-5">
+                <div className="flex items-center flex-col lg:flex-row justify-between gap-5 lg:gap-12">
                     <div className="max-w-[558px] w-full">
                         <div className="flex flex-row -mx-3 flex-wrap" id='sources'>
                             {CARD_DATA.map((items, index) => (
@@ -26,9 +26,9 @@ const Empowering = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="max-w-[494px] w-full flex flex-col items-start">
-                        <PrimaryHeading className='text-left text' data="Empowering Through " redText="Information" />
-                        <PrimaryParagraph className='mt-3 text text-left' data="While Herbert cannot provide legal advice, we envision him as an empowering tool that helps users" />
+                    <div className="xl:max-w-[494px] lg:max-w-[414px] mt-9 lg:mt-0 w-full flex flex-col items-start sm:items-center lg:items-start">
+                        <PrimaryHeading className='text-left sm:text-center lg:text-left text' data="Empowering Through " redText="Information" />
+                        <PrimaryParagraph className='mt-3 text text-left sm:text-center lg:text-left' data="While Herbert cannot provide legal advice, we envision him as an empowering tool that helps users" />
                         <PrimaryButton text="Learn More" gsapClass='text' className="bg-offOrange text-white mt-11" />
                     </div>
                 </div>

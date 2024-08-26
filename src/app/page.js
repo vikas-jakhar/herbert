@@ -6,12 +6,12 @@ import Faq from "./components/home/Faq";
 import Footer from "./components/home/Footer";
 import ScrollToTop from "./components/common/ScrollToTop";
 import PreLoader from "./components/common/PreLoader";
-import Gsap from "./components/common/Gsap";
+import Animation from "./components/common/Animation";
 
 export default function Home() {
   return (
-    <div>
-      <Gsap />
+    <>
+      <Animation />
       <Hero />
       <Empowering />
       <CoreValues />
@@ -22,6 +22,6 @@ export default function Home() {
       </div>
       <ScrollToTop />
       <PreLoader />
-    </div>
+    </>
   );
 }

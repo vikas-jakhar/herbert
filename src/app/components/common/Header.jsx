@@ -36,21 +36,21 @@ const Header = () => {
                             </Link>
                         ))}
                         <span className='flex max-w-[327px] bg-lightGray h-px w-full absolute top-[153px] sm:hidden left-1/2 -translate-x-1/2'></span>
-                        <span className='flex max-w-[327px] bg-lightGray h-px w-full absolute top-[223px] sm:hidden left-1/2 -translate-x-1/2'></span>
-                        <PrimaryButton gsapClass="Light Landscape" text="Contact Us" className="md:mt-[42px] sm:hidden -mt-4 bg-offOrange text-white" />
+                        <span className='flex max-w-[327px] bg-lightGray h-px w-full absolute top-[229px] sm:hidden left-1/2 -translate-x-1/2'></span>
+                        <PrimaryButton gsapClass="w-full max-w-[302px] sm:hidden" text="Contact Us" className="md:mt-[42px] sm:hidden -mt-4 w-full max-w-[375px] bg-offOrange text-white" />
                     </div>
-                    <div role="button" aria-label="menu icon" aria-expanded={open} onClick={ToggleOpen} className={`${open ? "rounded-full shadow-5xl h-6" : ""} w-6 h-4 relative sm:hidden flex z-20 cursor-pointer duration-300 ease-linear`}>
+                    <div role="button" aria-label="menu icon" aria-expanded={open} onClick={ToggleOpen} className={`${open ? "shadow-5xl h-6" : ""} w-6 h-4 rounded-full relative sm:hidden flex z-20 cursor-pointer duration-300 ease-linear`}>
                         <div className="">
-                            <span className={`${open ? "top-[45.8%] rotate-45 left-1/2 -translate-x-1/2" : "top-[0.2px] right-0"} absolute w-[18px] h-[3px] rounded-md bg-offBlack duration-300 ease-linear`}></span>
-                            <span className={`${open ? "hidden" : "top-0"} left-0 absolute w-[4px] h-[4px] rounded-full bg-offBlack duration-300 ease-linear`}></span>
+                            <span className={`${open ? "top-[45.8%] rotate-45 left-1/2 -translate-x-1/2" : "top-0 right-0"} absolute w-[18px] h-1 rounded-md bg-offBlack duration-300 ease-linear`}></span>
+                            <span className={`${open ? "hidden" : "top-0"} left-0 absolute w-1 h-1 rounded-full bg-offBlack duration-300 ease-linear`}></span>
                         </div>
                         <div className="">
-                            <span className={`${open ? "opacity-0" : "opacity-100 right-0"} top-1/2 -translate-y-1/2 absolute w-[18px] h-[3px] rounded-md bg-offBlack duration-300 ease-linear`}></span>
-                            <span className={`${open ? "hidden" : ""} left-0 top-1/2 -translate-y-1/2 absolute w-[4px] h-[4px] rounded-full bg-offBlack duration-300 ease-linear`}></span>
+                            <span className={`${open ? "opacity-0" : "opacity-100 right-0"} top-1/2 -translate-y-1/2 absolute w-[18px] h-1 rounded-md bg-offBlack duration-300 ease-linear`}></span>
+                            <span className={`${open ? "hidden" : ""} left-0 top-1/2 -translate-y-1/2 absolute w-1 h-1 rounded-full bg-offBlack duration-300 ease-linear`}></span>
                         </div>
                         <div className="">
-                            <span className={`${open ? "top-[45.8%] -rotate-45 left-1/2 -translate-x-1/2" : "bottom-[0.8px] right-0"} absolute w-[18px] h-[3px] rounded-md bg-offBlack duration-300 ease-linear`}></span>
-                            <span className={`${open ? "hidden" : "bottom-0"} left-0 absolute w-[4px] h-[4px] rounded-full bg-offBlack duration-300 ease-linear`}></span>
+                            <span className={`${open ? "top-[45.8%] -rotate-45 left-1/2 -translate-x-1/2" : "bottom-0 right-0"} absolute w-[18px] h-1 rounded-md bg-offBlack duration-300 ease-linear`}></span>
+                            <span className={`${open ? "hidden" : "bottom-0"} left-0 absolute w-1 h-1 rounded-full bg-offBlack duration-300 ease-linear`}></span>
                         </div>
                     </div>
                 </nav>

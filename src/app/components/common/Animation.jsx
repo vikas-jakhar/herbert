@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Gsap = () => {
+    // NavBar
     useLayoutEffect(() => {
         const aot = gsap.context(() => {
             gsap.fromTo(".navBar", {
@@ -22,6 +23,7 @@ const Gsap = () => {
 
         return () => aot.revert();
     }, []);
+    // Hero 
     useLayoutEffect(() => {
         const aot = gsap.context(() => {
             gsap.from(".Light", {
@@ -66,6 +68,7 @@ const Gsap = () => {
 
         return () => aot.revert();
     }, []);
+    // Empowering
     useLayoutEffect(() => {
         const aot = gsap.context(() => {
             gsap.from(".card", {
@@ -98,6 +101,7 @@ const Gsap = () => {
 
         return () => aot.revert();
     }, []);
+    // CoreValue
     useLayoutEffect(() => {
         const aot = gsap.context(() => {
             gsap.from(".heading", {
@@ -142,6 +146,7 @@ const Gsap = () => {
 
         return () => aot.revert();
     }, []);
+    // Vision
     useLayoutEffect(() => {
         const aot = gsap.context(() => {
             gsap.from(".image", {
@@ -174,6 +179,7 @@ const Gsap = () => {
 
         return () => aot.revert();
     }, []);
+    // faq
     useLayoutEffect(() => {
         const aot = gsap.context(() => {
             gsap.from(".left", {
@@ -205,6 +211,7 @@ const Gsap = () => {
         });
         return () => aot.revert();
     }, []);
+    // footer
     useLayoutEffect(() => {
         const aot = gsap.context(() => {
             gsap.from(".bottom", {

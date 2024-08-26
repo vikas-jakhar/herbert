@@ -26,23 +26,23 @@ const Faq = () => {
                 <PrimaryParagraph className='text-center right mt-[14px] md:mt-4 max-w-[622px] mx-auto' data="Help users find quick answers to common queries about Herbert, our AI-powered assistant for German visa and immigration processes." />
                 <div className="md:pt-10 pt-2 flex flex-col lg:flex-row lg:gap-6 w-full">
                     {ACCORDION_DATA.map((item, outerIndex) => (
-                        <div key={item.id} className='lg:max-w-[558px] w-full'>
+                        <div key={outerIndex} className='lg:max-w-[558px] w-full'>
                             {item.items.map((i, index) => {
                                 const computedIndex = `${outerIndex}-${index}`;
                                 return (
-                                    <div key={computedIndex} className={`${item.id === 1 ? "left" : "right"}`}>
+                                    <div key={computedIndex} className={`${outerIndex === 1 ? "left" : "right"}`}>
                                         <div className={`${openIndex === computedIndex ? 'border-transparent shadow-3xl' : 'border-lightGray'} w-full border bg-white overflow-hidden rounded-md flex mt-3 lg:mt-6 justify-center relative duration-300 ease-linear`}>
                                             <div className="accordion w-full">
-                                                <div role="button" className={`${openIndex === computedIndex ? 'pb-3 pt-[18px]' : 'py-[18px]'} duration-300 ease-linear accordion-header relative z-[1] flex items-center gap-2 justify-between cursor-pointer px-6`}
+                                                <div role="button" className={`${openIndex === computedIndex ? 'pb-2 sm:pb-3 sm:pt-[18px]' : 'sm:py-[18px]'} duration-300 ease-linear accordion-header relative z-[1] flex items-center gap-2 justify-between cursor-pointer p-[14px] sm:px-6`}
                                                     onClick={() => handleToggle(computedIndex)} aria-expanded={openIndex === computedIndex}>
-                                                    <div className="flex items-start sm:items-center gap-1.5"><h3 className={`font-normal text-offBlack text-sm md:text-base`}>{i.title}</h3></div>
+                                                    <div className="flex items-start sm:items-center gap-1.5"><h2 className={`font-normal text-offBlack text-sm md:text-base`}>{i.title}</h2></div>
                                                     <div className="w-[14px] h-[14px] p-1.5 relative overflow-hidden">
                                                         <span className='flex w-full h-[3px] bg-offGray absolute left-0 top-1/2 -translate-y-1/2'></span>
                                                         <span className={`flex w-[3px] h-full bg-offGray absolute left-1/2 top-0 -translate-x-1/2 duration-300 ease-linear ${openIndex === computedIndex ? 'rotate-90 opacity-0' : ''}`}></span>
                                                     </div>
                                                 </div>
                                                 <div ref={el => contentRefs.current[computedIndex] = el} className={`accordion-content overflow-hidden duration-300 ease-linear`} style={{ maxHeight: openIndex === computedIndex ? getHeight(computedIndex) : '0px' }}>
-                                                    <div className="flex items-start px-6 pb-[18px] w-full"><PrimaryParagraph data={i.content} /></div>
+                                                    <div className="flex items-start px-[14px] sm:px-6 pb-[18px] w-full"><PrimaryParagraph data={i.content} /></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -64,7 +64,7 @@ const Faq = () => {
                     </div>
                 </div>
             </div>
-            <Image src="/assets/images/webp/faq-bottom-img.webp" alt="faq-bottom-img" width={1703} height={686} sizes="(max-width: 640px) 90vw, (min-width: 641px) and (max-width: 1024px) 80vw, 1703px" className="left-1/2 -translate-x-1/2 max-w-[1440px] absolute bottom-0 w-full lg:h-[686px] h-[485px] object-cover" />
+            <Image src="/assets/images/webp/faq-bottom-img.webp" alt="faq-bottom-img" width={1703} height={686} sizes="(max-width: 640px) 90vw, (min-width: 641px) and (max-width: 1024px) 80vw, 1703px" className="left-1/2 -translate-x-1/2 max-w-[1248px] sm:max-w-[1703px] absolute bottom-0 lg:h-[686px] h-[485px] object-cover" />
         </div>
     )
 }
