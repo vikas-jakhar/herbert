@@ -8,13 +8,13 @@ import Image from 'next/image';
 
 const Empowering = () => {
     return (
-        <div className='bg-offWhite relative py-16 sm:py-20 Empowering'>
+        <div className='bg-offWhite relative py-16 sm:py-20 Empowering' id='sources'>
             <div className="container sm:pb-10 lg:pt-4">
                 <div className="flex items-center flex-col lg:flex-row justify-between gap-5">
                     <div className="max-w-[558px] w-full">
                         <div className="flex flex-row -mx-3 flex-wrap">
                             {CARD_DATA.map((items, index) => (
-                                <div key={index} className="sm:w-1/2 w-full px-3 mt-6">
+                                <div key={index} className="sm:w-1/2 w-full px-3 mt-6 Empowering">
                                     <div className="bg-white w-full h-full p-3 xl:p-5 rounded-xl flex flex-col items-center card">
                                         <Icons IconName={items.icon} className="w-[72px] h-[72px] justify-center items-center bg-lightOrange-gradient rounded-full" />
                                         <p className='font-medium text-base sm:text-xl text-offBlack text-center gap-1.5 sm:gap-0 mt-4 flex sm:flex-col'>
