@@ -1,6 +1,6 @@
 export const HEADER_DATA = [
     { heading: "Herbert", url: "#hero" },
-    { heading: "Sources", url: "#" },
+    { heading: "Sources", url: "#sources" },
     { heading: "Our Vision", url: "#vision" },
 ]
 export const CARD_DATA = [

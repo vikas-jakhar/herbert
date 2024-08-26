@@ -8,11 +8,11 @@ import Image from 'next/image';
 
 const Empowering = () => {
     return (
-        <div className='bg-offWhite relative py-16 sm:py-20 Empowering overflow-hidden' id='sources'>
+        <div className='bg-offWhite relative py-16 sm:py-20 Empowering overflow-hidden'>
             <div className="container sm:pb-10 lg:pt-4">
                 <div className="flex items-center flex-col lg:flex-row justify-between gap-5">
                     <div className="max-w-[558px] w-full">
-                        <div className="flex flex-row -mx-3 flex-wrap">
+                        <div className="flex flex-row -mx-3 flex-wrap" id='sources'>
                             {CARD_DATA.map((items, index) => (
                                 <div key={index} className="sm:w-1/2 w-full px-3 mt-6 Empowering">
                                     <div className="bg-white w-full h-full p-3 xl:p-5 rounded-xl flex flex-col items-center card">
