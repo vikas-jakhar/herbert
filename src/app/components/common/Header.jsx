@@ -27,7 +27,7 @@ const Header = () => {
             <div className="container">
                 <nav className="flex items-center justify-between">
                     <Link href="/" className="w-fit relative z-20">
-                        <Image src="/assets/images/webp/herbert-logo.webp" alt="herbert-logo" className="sm:max-w-[180px] navBar max-w-[117px] w-full" width={180} height={54} sizes="(max-width: 640px) 50vw, (min-width: 641px) 33vw, 117px" />
+                        <Image loading="lazy" src="/assets/images/webp/herbert-logo.webp" alt="herbert-logo" className="sm:max-w-[180px] navBar max-w-[117px] w-full" width={180} height={54} sizes="(max-width: 640px) 50vw, (min-width: 641px) 33vw, 117px" />
                     </Link>
                     <div className={`${open ? "left-0 bg-white" : "-left-full"} flex items-center z-10 sm:bg-transparent absolute flex-col w-full h-screen pt-[108px] sm:pt-0 gap-12 top-0 sm:relative sm:bg-none sm:flex-row sm:gap-11 sm:h-fit sm:w-fit sm:left-auto duration-300 ease-linear`}>
                         {HEADER_DATA.map((i, index) => (

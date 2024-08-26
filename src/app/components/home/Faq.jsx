@@ -30,7 +30,7 @@ const Faq = () => {
                             {item.items.map((i, index) => {
                                 const computedIndex = `${outerIndex}-${index}`;
                                 return (
-                                    <div key={computedIndex} className={`${outerIndex === 1 ? "left" : "right"}`}>
+                                    <div key={computedIndex} className={`${outerIndex === 0 ? "left" : "right"}`}>
                                         <div className={`${openIndex === computedIndex ? 'border-transparent shadow-3xl' : 'border-lightGray'} w-full border bg-white overflow-hidden rounded-md flex mt-3 lg:mt-6 justify-center relative duration-300 ease-linear`}>
                                             <div className="accordion w-full">
                                                 <div role="button" className={`${openIndex === computedIndex ? 'pb-2 sm:pb-3 sm:pt-[18px]' : 'sm:py-[18px]'} duration-300 ease-linear accordion-header relative z-[1] flex items-center gap-2 justify-between cursor-pointer p-[14px] sm:px-6`}
@@ -64,7 +64,7 @@ const Faq = () => {
                     </div>
                 </div>
             </div>
-            <Image src="/assets/images/webp/faq-bottom-img.webp" alt="faq-bottom-img" width={1703} height={686} sizes="(max-width: 640px) 90vw, (min-width: 641px) and (max-width: 1024px) 80vw, 1703px" className="left-1/2 -translate-x-1/2 max-w-[1248px] sm:max-w-[1703px] absolute bottom-0 lg:h-[686px] h-[485px] object-cover" />
+            <Image loading="lazy" src="/assets/images/webp/faq-bottom-img.webp" alt="faq-bottom-img" width={1703} height={686} sizes="(max-width: 640px) 90vw, (min-width: 641px) and (max-width: 1024px) 80vw, 1703px" className="left-1/2 -translate-x-1/2 max-w-[1248px] sm:max-w-[1703px] absolute bottom-0 lg:h-[686px] h-[485px] object-cover" />
         </div>
     )
 }

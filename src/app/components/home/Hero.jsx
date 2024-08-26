@@ -25,12 +25,12 @@ const Hero = () => {
                         <PrimaryParagraph className='md:mt-4 mt-[14px] text-left sm:text-center lg:text-left Complex' data="We see Herbert as more than just a chatbot – he's a friendly, knowledgeable guide in the often confusing world of German immigration law. Our vision is to bridge the gap between raw information and practical understanding, making the immigration process more approachable for all." />
                     </div>
                     <div className="relative max-w-[261px] hello md:max-w-[392px] w-full max-h-[305px] sm:max-h-[457px] mt-8 lg:mt-0">
-                        <Image src="/assets/images/webp/hello-img.webp" alt="herbert-img" width={91} height={66} className="ml-auto absolute top-0 left-0" sizes="(max-width: 768px) 50vw, 100vw" />
-                        <Image src="/assets/images/webp/herbert-img.webp" alt="herbert-img" className="w-full max-w-[239px] sm:max-w-[359px] max-h-[305px] sm:max-h-[457px] xl:h-full mx-auto lg:mr-0" width={259} height={457} sizes="(max-width: 640px) 100vw, (min-width: 640px) 50vw, 239px" />
+                        <Image loading="lazy" src="/assets/images/webp/hello-img.webp" alt="herbert-img" width={91} height={66} className="ml-auto absolute top-0 left-0" sizes="(max-width: 768px) 50vw, 100vw" />
+                        <Image loading="lazy" src="/assets/images/webp/herbert-img.webp" alt="herbert-img" className="w-full max-w-[239px] sm:max-w-[359px] max-h-[305px] sm:max-h-[457px] xl:h-full mx-auto lg:mr-0" width={259} height={457} sizes="(max-width: 640px) 100vw, (min-width: 640px) 50vw, 239px" />
                     </div>
                 </div>
             </div>
-            <Image src="/assets/images/webp/vector.webp" alt="vector" width={60} style={{ width: 'auto', height: '300px' }} height={0} sizes="(max-width: 640px) 50vw, (min-width: 641px) and (max-width: 1024px) 30vw, 60px" className="absolute bottom-[22%] right-0 hidden md:flex"
+            <Image loading="lazy" src="/assets/images/webp/vector.webp" alt="vector" width={60} style={{ width: 'auto', height: '300px' }} height={0} sizes="(max-width: 640px) 50vw, (min-width: 641px) and (max-width: 1024px) 30vw, 60px" className="absolute bottom-[22%] right-0 hidden md:flex"
             />
         </div>
     )

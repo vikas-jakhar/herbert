@@ -35,7 +35,7 @@ const ScrollToTop = () => {
     useEffect(() => {
         window.addEventListener('scroll', toggleVisible);
         window.addEventListener('resize', checkScreenWidth);
-        checkScreenWidth(); 
+        checkScreenWidth();
 
         return () => {
             window.removeEventListener('scroll', toggleVisible);
@@ -53,7 +53,7 @@ const ScrollToTop = () => {
             }}
         >
             <span className="sm:text-sm text-xs md:text-base text-offBlack font-bold group-hover:opacity-0 duration-300 ease-linear font-rubik">{scrollPercent}%</span>
-            <Image
+            <Image loading="lazy"
                 src="/assets/images/svg/scroll-to-top.svg"
                 alt="scroll-to-top"
                 width={100}
