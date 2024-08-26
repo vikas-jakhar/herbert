@@ -7,8 +7,8 @@ import Image from 'next/image';
 
 const Vision = () => {
     return (
-        <div className='bg-offWhite xl:min-h-[746px] py-16 flex flex-col justify-center items-center Vision relative' id='vision'>
-            <div className="max-w-[1440px] mx-auto h-full w-full relative flex flex-col items-center">
+        <div className='bg-offWhite xl:min-h-[746px] py-16 flex flex-col justify-center items-center Vision relative overflow-hidden'>
+            <div className="max-w-[1440px] mx-auto h-full w-full relative flex flex-col items-center" id='vision'>
                 <Image src="/assets/images/webp/our-vision.webp" alt="our-vision" width={701} height={602} sizes="(max-width: 640px) 90vw, (min-width: 641px) and (max-width: 1024px) 80vw, 701px" className="left-0 image max-w-[500px] xl:max-w-[701px] w-full lg:absolute lg:top-1/2 lg:-translate-y-1/2" />
                 <div className="container flex justify-center lg:justify-end relative z-[1] lg:my-24 mt-14">
                     <div className="max-w-[473px] w-full">

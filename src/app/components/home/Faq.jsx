@@ -58,13 +58,13 @@ const Faq = () => {
                         <PrimaryHeading className='text-white right text-center' data="Need Help in Your Visa? Ask Herbert Now!" />
                         <PrimaryParagraph className='text-white right max-w-[528px] mx-auto text-center mt-3 md:mt-4' data="Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam." />
                         <div className="flex flex-col sm:flex-row justify-center items-center pt-8 md:pt-10 md:mt-0.5 gap-3 sm:gap-4">
-                            <PrimaryButton gsapClass="w-full right flex justify-center sm:w-fit" text="Start your conversation" className="bg-white text-offOrange w-full max-w-[300px]" />
+                            <PrimaryButton gsapClass="w-full right flex justify-center sm:w-fit" text="Start your conversation" className="bg-white hover:text-white text-offOrange w-full max-w-[300px]" />
                             <PrimaryButton gsapClass="w-full right flex justify-center sm:w-fit" text="Learn More" className="bg-offOrange text-white border-white w-full max-w-[300px]" />
                         </div>
                     </div>
                 </div>
             </div>
-            <Image src="/assets/images/webp/faq-bottom-img.webp" alt="faq-bottom-img" width={1703} height={686} sizes="(max-width: 640px) 90vw, (min-width: 641px) and (max-width: 1024px) 80vw, 1703px" className="left-1/2 -translate-x-1/2 absolute bottom-0 w-full lg:h-[686px] h-[485px] object-cover" />
+            <Image src="/assets/images/webp/faq-bottom-img.webp" alt="faq-bottom-img" width={1703} height={686} sizes="(max-width: 640px) 90vw, (min-width: 641px) and (max-width: 1024px) 80vw, 1703px" className="left-1/2 -translate-x-1/2 max-w-[1440px] absolute bottom-0 w-full lg:h-[686px] h-[485px] object-cover" />
         </div>
     )
 }

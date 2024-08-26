@@ -11,9 +11,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
     return (
-        <div className='relative pt-[14px] sm:pt-[23px] pb-16 bg-hero-small sm:bg-hero bg-contain bg-no-repeat bg-top' id='hero'>
+        <div className='relative pt-[14px] sm:pt-[23px] pb-16 bg-hero-small sm:bg-hero bg-contain bg-no-repeat bg-top overflow-hidden'>
             <Header />
-            <div className="container pt-16 my-2 pb-2 sm:pb-12 relative z-[1]">
+            <div className="container pt-16 my-2 pb-2 sm:pb-12 relative z-[1]" id='hero'>
                 <div className="max-w-[773px] w-full mx-auto flex flex-col items-center md:mb-20 mb-12">
                     <h2 className='lg:text-custom-2xl Light text-custom-xl sm:text-4xl md:text-5xl leading-8 font-rubik text-black text-center xl:leading-custom-2xl font-semibold'>Simplifying <span className='text-lightRed'>German Immigration</span> with Herbert</h2>
                     <PrimaryParagraph className='md:mt-4 Herbert mt-[14px] text-center' data="At Herbert Visa, we envision a world where the path to German immigration is clear, accessible, and stress-free for everyone. While the information Herbert is trained on is publicly available, we recognize that navigating this vast sea of legal documents and regulations can be overwhelming." />
@@ -30,7 +30,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <Image src="/assets/images/webp/vector.webp" alt="vector" width={60} style={{ width: 'auto', height: '300px' }} height={0} sizes="(max-width: 640px) 50vw, (min-width: 641px) and (max-width: 1024px) 30vw, 60px" className="absolute bottom-[22%] right-0 hidden md:flex" 
+            <Image src="/assets/images/webp/vector.webp" alt="vector" width={60} style={{ width: 'auto', height: '300px' }} height={0} sizes="(max-width: 640px) 50vw, (min-width: 641px) and (max-width: 1024px) 30vw, 60px" className="absolute bottom-[22%] right-0 hidden md:flex"
             />
         </div>
     )

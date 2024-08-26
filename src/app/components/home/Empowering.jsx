@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 const Empowering = () => {
     return (
-        <div className='bg-offWhite relative py-16 sm:py-20 Empowering' id='sources'>
+        <div className='bg-offWhite relative py-16 sm:py-20 Empowering overflow-hidden' id='sources'>
             <div className="container sm:pb-10 lg:pt-4">
                 <div className="flex items-center flex-col lg:flex-row justify-between gap-5">
                     <div className="max-w-[558px] w-full">

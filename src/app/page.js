@@ -10,14 +10,16 @@ import Gsap from "./components/common/Gsap";
 
 export default function Home() {
   return (
-    <div className="overflow-hidden">
+    <div>
       <Gsap />
       <Hero />
       <Empowering />
       <CoreValues />
       <Vision />
-      <Faq />
-      <Footer />
+      <div className="overflow-hidden">
+        <Faq />
+        <Footer />
+      </div>
       <ScrollToTop />
       <PreLoader />
     </div>

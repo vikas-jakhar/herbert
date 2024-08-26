@@ -43,7 +43,8 @@ module.exports = {
         mediumGray: "#D6D0CB",
       },
       dropShadow: {
-        'blue-sm': "1px 1px 0px blue",
+        'gray-sm': "1px 1px 0px #5F5F5F",
+        'black-sm': "1px 1px 0px #010101",
       },
       boxShadow: {
         'black-border': "0px 0px 0px 1px white, 2px 2px 0px 1px black",

@@ -35,7 +35,7 @@ const Footer = () => {
                                 {SOCIAL_ICONS.map((e, idx) => (
                                     <div key={idx} className="bottom w-fit">
                                         <Link href={e.link} aria-label="social icon" aria-hidden="true" target='_blank' rel="noreferrer" className='rounded-full w-9 h-9 grid place-items-center bg-lightOrange-gradient duration-300 relative ease-linear group overflow-hidden hover:shadow-4xl'>
-                                            <Icons IconName={e.icon} className="z-[2] relative" fill="group-hover:fill-white group-hover:drop-shadow-blue-sm" />
+                                            <Icons IconName={e.icon} className="z-[2] relative" fill="group-hover:fill-white group-hover:drop-shadow-black-sm" />
                                             <span className='flex h-0 w-0 bg-offOrange duration-300 ease-linear top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute group-hover:rotate-180 group-hover:w-16 group-hover:h-16'></span>
                                         </Link>
                                     </div>

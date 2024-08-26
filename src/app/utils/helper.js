@@ -1,7 +1,7 @@
 export const HEADER_DATA = [
-    { heading: "Herbert", url: "#" },
+    { heading: "Herbert", url: "#hero" },
     { heading: "Sources", url: "#" },
-    { heading: "Our Vision", url: "#" },
+    { heading: "Our Vision", url: "#vision" },
 ]
 export const CARD_DATA = [
     { icon: "pcIcon", title: "Identify", heading: "Relevant Information", text: "Herbert helps you pinpoint exactly what you need to know, saving you hours of searching through complex legal documents." },
